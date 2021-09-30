@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+    <%- include("../partials/head")%>
+
+
+<body>
+
+    <%- include("../partials/header")%>
+   <main>
+    <H2>Crea tu Producto</H2>
+
+    <form action="/products/" method="POST" class="createform" enctype="multipart/form-data"> 
+        
+            <div class="controldelformulario">
+                <label>Nombre del Producto</label>
+                <input type="text" name="name" class="control">
+            </div>           
+            <div class="controldelformulario">
+                <label>Precio</label>
+                <input type="number"name="price" placeholder="123,45"class="control">
+            </div>
+            <div class="controldelformulario">
+                <label>Descuento</label>
+                <input type="number"name="discount" placeholder="30%"class="control">
+            </div>
+                        
+            <!-- <div class="controldelformulario">
+                <label>Categoría</label>
+                <select name="category" placeholder="Camping" class="control">
+                    <option value="Indumentaria">Indumentaria</option>
+                    <option value="Pesca">Pesca</option>
+                    <option value="Trekking">Trekking</option>
+                    <option value="Camping">Camping</option>                    
+                </select>
+            </div> -->
+            
+            <div class="controldelformulario">
+                <label>Talle</label>
+                <select name="size" class="control" placeholder="XXL">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+            
+            <div class="controldelformulario">
+                <label>Color</label>
+                <select name="color" class="control" placeholder="Verde">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div> 
+                
+            <!-- <div class="controldelformulario">
+                <label>Condicion </label>
+                <input type="text"name="category_index" placeholder="In-Sales"class="control" >
+            </div> -->
+
+        
+
+            <div  class="controldelformulario">
+                <label for="">Descripcion del Producto</label>
+                <textarea name="description" id="" cols="30" rows="10"class="control"></textarea>
+            </div>
+
+            <div class="controldelformulario">
+                <label>Seleccionar una imagen para el Producto:</label>
+                <input type="file" name="image" accept=".jpg" class="control">
+            </div>
+            <!-- <div  class="controldelformulario">
+           <label>Esta en oferta?</label>
+            <input type="radio" name="EnOferta">
+            </div> -->
+
+            <div  class="controldelformulario">
+        <button type="submit">Guardar</button>
+        <button type="reset">Borrar</button>
+            </div>
+                   
+    </form>
+    
+</main>
+
+    <%- include("../partials/footer")%>
+
+
+</body>

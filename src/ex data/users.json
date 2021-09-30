@@ -1,0 +1,34 @@
+[
+ {
+  "id": 3,
+  "firstname": "Sole",
+  "lastname": "Aldao",
+  "email": "soledad_aldao@hotmail.com",
+  "password": "$2a$10$d.5gqGEaR9BXB6yp/Pl/Juv5fEyaT4LCFW0/Wi.zJIrSI3WNtfBJu",
+  "avatar": null
+ },
+ {
+  "id": 4,
+  "firstname": "Axi",
+  "lastname": "gdsdgsd",
+  "email": "axi@gmail.com",
+  "password": "$2a$10$Yfb3YIFOf7HvHwnDesuTs.lDCAStgh7SuYUVqktp3/L.m7wnIZRF6",
+  "avatar": null
+ },
+ {
+  "id": 5,
+  "firstname": "seba",
+  "lastname": "calvo",
+  "email": "sebacalvo@hotmail.com",
+  "password": "$2a$10$kJ1hXvFCDFYoa9PLFS0QXeFSV7/23Fj6gSizttTgev0Z4WppUxqli",
+  "avatar": "1624941924987_img.jpg"
+ },
+ {
+  "id": 6,
+  "firstname": "Horacio",
+  "lastname": "Fischer",
+  "email": "horacio_fischer@hotmail.com",
+  "password": "$2a$10$Te3vVdd1/Xw/mMfH4X/6YOq/VdwoSXZRAfKLkfmbDJ9XNfiSEgsgi",
+  "avatar": "1625422174460_img.jpg"
+ }
+]

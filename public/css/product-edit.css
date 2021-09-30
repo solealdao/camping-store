@@ -1,0 +1,59 @@
+.tituloImagen{
+    margin: 15px auto;
+    width: 75%; 
+    
+}
+
+
+.imagenProductoEdit{
+    margin: 15px auto;
+    width: 75%;    
+  
+    /* margin: 40px;
+    display: flex  */
+}
+
+
+/* .descripcion{
+    display: none;
+}
+
+.producto-oferta:hover .descripcion{
+    display: flex;
+    transition: 1s;
+} */
+
+
+
+.controldelformularioImagenEdit{
+    margin: 15px auto;
+    width: 75%;    
+    display: block     
+}
+
+
+.controldelformularioEditOption{
+    display: block;
+}
+
+
+.imagenProductoEdit p {
+    margin: 30px;
+    margin-left: 40px;
+}
+
+.imagenProductoDetalle {
+    
+    border: 1px solid red;
+    height: 250px;
+}
+
+.erase-button{
+    text-align:center
+
+}
+
+.checkbox-edit{
+    display:block;
+    margin-left: 10px
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include("../partials/head")%>
+
+
+<body>
+
+    <%- include("../partials/header")%>
+    <main>
+        <H2>Crea tu Producto</H2>
+
+        <form action="/products/" method="POST" class="createform" enctype="multipart/form-data" id="create-form">
+
+            <div class="controldelformulario">
+                <label>Nombre del Producto</label>
+                <input type="text" name="name" class="control" id="name-field" value="<%= locals.oldData ? oldData.name : null %>">
+                <div class="text-danger" id="name-error"></div>
+                <% if (locals.errors && errors.name) { %>
+                    <div class= 'text-danger'>
+                        <%= errors.name.msg %>
+                    </div>
+                <% } %>
+            </div>
+            
+            <div class="controldelformulario">
+                <label>Seleccionar una imagen para el Producto:</label>
+                <input type="file" name="image" accept=".jpg" class="control" id="image-field">
+                <div class="text-danger" id="image-error"></div>
+                <% if (locals.errors && errors.image) { %>
+                    <div class= 'text-danger'>
+                        <%= errors.image.msg %>
+                    </div>
+                <% } %>
+            </div>
+
+            <div class="controldelformulario">
+                <label>Precio</label>
+                <input type="number" name="price" placeholder="123,45" class="control">
+            </div>
+            <div class="controldelformulario">
+                <label>Descuento</label>
+                <input type="number" name="discount" placeholder="30%" class="control">
+            </div>
+
+
+        <div class="controldelformulario">
+            <label>Código Talle</label>
+            
+            <select name="size"  class="control">
+                <% sizes.forEach (function(id,i) { %> 
+                <option value=<%= sizes[i].id %>> <%= sizes[i].size %> </option>   
+               
+                <% }) %>
+                </select>
+        </div>
+
+       
+        <div class="controldelformulario">
+            <label>Código Color</label>
+                <select name="color"  class="control">
+                <% colors.forEach (function(id,i) { %> 
+                <option value=<%= colors[i].id %>> <%= colors[i].color %> </option>   
+                <% }) %>
+                </select>
+        </div>
+
+        <div class="controldelformulario">
+            <label for="Categorias">Categorías</label>            
+            <% categories.forEach (function(id,i) { %> 
+                <div class= "checkbox-create"><input type="checkbox" name="Categorias" value=<%= categories[i].id %>> <%= categories[i].name %>
+                </div>
+            <% }) %>
+                
+        </div>        
+
+        
+
+        <div class="controldelformulario">
+                <label for="">Descripción del Producto</label>
+                <textarea name="description" id="description-field" cols="30" rows="10" class="control" value="<%= locals.oldData ? oldData.description : null %>"></textarea>
+                <div class="text-danger" id="description-error"></div>
+                <% if (locals.errors && errors.description) { %>
+                    <div class= 'text-danger'>
+                        <%= errors.description.msg %>
+                    </div>
+                <% } %>
+        </div>
+
+            
+        <div class="controldelformulario">
+                <button type="submit">Guardar</button>
+                <button type="reset">Borrar</button>
+        </div>
+
+        </form>
+
+    </main>
+
+    <%- include("../partials/footer")%>
+
+    <script src="/js/productCreate.js"></script>
+</body>

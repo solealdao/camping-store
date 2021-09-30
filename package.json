@@ -1,0 +1,33 @@
+{
+  "name": "campingstore",
+  "version": "1.0.0",
+  "description": "Camping Store:\r Comercializa productos para camping, actividades deportivas (caza, pesca)y turismo aventura. \r La audiencia objetivo del sitio son personas entre 18 y 60 años principalmente, que disfrutan de la vida al aire libre, turismo aventura y actividades deportivas.",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfischer78/grupo_3_Camping_Store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfischer78/grupo_3_Camping_Store/issues"
+  },
+  "homepage": "https://github.com/hfischer78/grupo_3_Camping_Store#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  }
+}

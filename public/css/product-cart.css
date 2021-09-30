@@ -1,0 +1,222 @@
+
+/* Estilo del articulo*/
+.cartArticle{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilo del main en el carrtito */
+
+.mainCarrito{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Estilo de la etiqueta que contiene el nombre DETALLE DE PRODUCTO */
+
+h2{
+   text-align: center;
+   border-bottom:solid black;
+   width: 100%; 
+   padding: 10px
+}
+
+
+/* Estilos de de los articulos (productos comprados y detalles) */
+
+article{
+    border-bottom: solid 1px grey;
+}
+
+    /* Estilos del contenedor de Imagen, Producto y descripción */
+    .cartProduct{
+        display:flex;
+        justify-content:start;
+        /*flex-wrap: wrap;*/
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+            /*Estilo de los div de cartProduct (*/
+            .cartProduct div{
+                margin: 10px;
+                align-items: center;
+            }
+            
+            /* Aplicacion de estilo a la imagen del producto */
+            .imgProd{
+                width: 300px;
+                height: 65px;
+            }
+
+            /* Estilo de la descripción del producto */
+            .descripcion{
+                text-align: justify;
+            }
+
+            /* Estilo del nombre del producto*/
+            .producto{
+                
+                font-weight: bold;
+                display:flex;
+        justify-content:start;
+        flex-wrap: wrap;
+        width: 400px;
+        padding: 5px;
+        
+            }
+
+    /*  Estilos del contenedor de los detalles de la compra (cantidad, precio y total) */  
+    .detalleCompra{
+        display:flex;
+        justify-content:start;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        }   
+
+            /*Estilo de los div de detalleCompra */
+            .detalleCompra div{
+                margin: 10px
+            }    
+        
+       
+            /* Estilos Generales de elementos */    
+            .nombreEtiqueta{
+                font-weight: bold;
+                margin: 0px;
+                text-align: center;
+            }
+
+            .icono{
+                text-align: center;
+            }
+
+                .icono i{
+                    color: #2B3A67;
+                    
+                }
+
+/* ENTREGA Y RESUMEN DE COMPRA */
+
+
+.etiquetaSecciones{
+    border-bottom:solid black;
+    margin: 10px 0px 25px 0px;
+    padding: 10px;
+}
+
+
+
+    /* SECCION DATO DE ENTREGA */
+    
+    /*Estilo General de la sección */
+    .datosEntrega{ 
+        width: 100%;
+    }
+    
+    /* Texto para elegir opción de entrega */
+    .textoEntrega{
+        font-style: italic;
+    }
+
+    /* Formulario para elección de forma de entrega de producto */
+    .formularioEntrega{
+        margin: 20px;
+        flex-wrap: wrap;
+    }
+
+        /*Contenedor de los botones checkbox para elegir forma de entrega*/
+        .contenedorFormEntrega{
+            display: flex;
+            margin: 0px;
+            align-items: center;
+        }
+
+            /* Etiqueta de los botones */
+            .contenedorFormEntrega label{
+            font-style: italic;
+            font-weight: bold;
+            }
+
+            /* Botones de opcion */
+            .botonFormularioEntrega{
+                margin-right: 10px;
+                margin-left: 10px;
+                padding: 10px;
+            }
+    
+    /* formulario para completar CP o elegir sucursal de entrega del producto */
+    /*.formularioEntregaDetalle{}*/
+
+        
+        /* Contenedor de las opciones para completar, de acuerdo al método de entrega elegido */
+        .contenedor-opciones{
+            display: block
+        }
+
+            /* formulario: etiqueta + campos de formulario // para completar de acuerdo a opciones seleccionadas */
+            .opcion-entrega{
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            /* SPAN para validacion de formulario */
+            .errorValidacion{
+                display: none;
+            }
+
+            .contenedor-opciones p{
+                font-style: italic;
+            }
+
+            /* campo del formulario de la opción a completar*/
+            .seleccionado{
+            width: 200px;
+            opacity: 0.5;
+            }
+
+        /* Boton para el calculo del costo de envío */
+        .boton{
+         background-color: #2B3A67;   
+         color: white;
+         transition: all 450ms;
+        }
+
+        .boton:hover{
+            background-color: #cbd7e7;
+            color: #202030;
+        }
+        
+
+
+/* RESUMEN DE COMPRA */
+ 
+.resumen-Compra{
+
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.etiquetaResumenItem{
+margin: 10px;
+}
+    
+.etiquetaResumenTotal{
+margin: 10px;
+font-weight: bold;
+}
+
+.contenedor-final{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.contenedor-final div{
+    margin: 0px 5px;
+}
+

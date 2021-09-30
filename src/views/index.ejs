@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head")%>
+
+
+<body>
+  <%- include("./partials/header")%>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img class="img-carousel" src="./img/img-carousel-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img-carousel" src="./img/img-carousel-2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="img-carousel" src="./img/img-carousel-3.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <main class="index-main">
+    <div class="h3-home">
+      <h3>Ofertas destacadas</h3>
+    </div>
+
+    <section>
+      
+      <% productsOnSale.forEach (function(id,i) { %>
+      <article class="producto-oferta">
+
+        <a href="/products/detail/<%= productsOnSale[i].id %>"><img class="imgProd"
+            src="/img/products/<%= (productsOnSale[i].image == null) ? 'product-default.png' : productsOnSale[i].image %>"></a>
+        <div class="caja-productos">
+          <i class="fas fa-piggy-bank pig-sale"></i>
+          <p class="titulo-producto"><%= productsOnSale[i].name %></p>
+          <div class="valores-oferta">
+            <p class="precio">$ <%= toThousand(productsOnSale[i].price) %> <span
+                class="descuento"><%= productsOnSale[i].discount %>% OFF</span></p>
+          </div>
+          <div class="descripcion"><%= productsOnSale[i].description %></div>
+        </div>
+
+      </article>
+      <% }) %>
+    </section>
+
+    <div class="h3-home">
+      <h3>Buscá por categoría</h3>
+    </div>
+
+    <section>
+      <article class="category-box">
+        <a href="/products/categoria/1"><img class="imgProd" src="/img/indumentaria.jpeg"></a>
+        <p class="category-title ind">INDUMENTARIA</p>
+      </article>
+    
+      <article class="category-box">
+        <a href="/products/categoria/2"><img class="imgProd" src="/img/fishing.jpeg"></a>
+        <p class="category-title fish">PESCA</p>
+      </article>
+
+      <article class="category-box">
+        <a href="/products/categoria/3"><img class="imgProd" src="/img/trekking.png"></a>
+        <p class="category-title trek">TREKKING</p>
+      </article>
+    
+      <article class="category-box">
+        <a href="/products/categoria/4"><img class="imgProd" src="/img/camping.jpeg"></a>
+        <p class="category-title camp">CAMPING</p>
+      </article>
+    </section>
+
+
+  </main>
+
+  <%- include("./partials/footer")%>
+
+  <script src="/js/slideShow.js"></script>
+</body>
+
+</html>

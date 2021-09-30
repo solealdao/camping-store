@@ -1,0 +1,63 @@
+
+.createform{
+    padding: 20px 15px;
+}
+.controldelformulario{
+    margin-bottom: 15px;
+    width: 75%;
+    margin: auto;
+}
+
+.controldelformulario button{    
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.controldelformulario label{
+margin: 15px 0px;
+display: block;
+font-weight: 600
+}
+
+.controldelformulario .checkbox-create{
+    display:block;
+    margin-left: 10px
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.controldeopciones{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    
+}
+
+button{
+    background-color: #2B3A67;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 450ms;
+}
+
+button:hover{
+    background-color: #cbd7e7;
+    color: #202030;
+}
+
+.ButtonMalo{
+    background-color: #FF3E41;
+    margin-left: 55px;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    color: white;    
+    border-radius: 5px;
+}
